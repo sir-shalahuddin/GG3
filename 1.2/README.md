@@ -1,5 +1,17 @@
+# Async/Await and Promise
+
 Lets assume that we have a Track schema with this format 
-{ title: "song tittle", artists:[{name: "artist name 1"}],duration:200}
+```
+{
+  title: "song tittle",
+  artists:[
+    {
+      name: "artist name 1"
+    }
+  ],
+  duration:200
+}
+```
 
 Create a function that :
 1. Create a Mock API response with promise that returns the Track after 2 second.
