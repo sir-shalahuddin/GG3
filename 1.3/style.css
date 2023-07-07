@@ -246,6 +246,15 @@ select optgroup {
         flex-wrap: wrap;
     }
 
+    .flex-left {
+        flex-basis: 100%;
+    }
+
+    .flex-right{
+        flex-basis: 100%;
+        padding: 10px;
+    }
+
     .playlist {
         flex-basis: 100%;
     }
