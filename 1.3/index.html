@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Spotipu</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="flex-left rounded">
+      <div class="navbar rounded">
+        <div class="navbar-item">
+          <h2>
+            <span class="fa fa-home"></span>
+            <span class="title">Home</span>
+          </h2>
+        </div>
+        <div class="navbar-item">
+          <h2>
+            <span class="fa fa-search"></span>
+            <span class="title">Search</span>
+          </h2>
+        </div>
+      </div>
+      <div class="playlist rounded">
+        <div class="playlists">
+          <div class="playlist-title">
+            <h2>
+              <span class="fa fa-list"> </span>
+              Your Playlists
+            </h2>
+          </div>
+          <div class="playlist-nav">
+            <span class="fa fa-plus"></span>
+            <span class="fa fa-arrow-right"></span>
+          </div>
+        </div>
+        <div class="playlist-tag">
+          <div class="playlist-tag-item">
+            <ul>
+              <li>
+                Playlist
+              </li>
+              <li>
+                Artist
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="playlist-search">
+          <span class="fa fa-search"></span>
+          <select name="sort-by" id="sort-by">
+            <optgroup label="Sort By">
+              <option value="recents">Recents</option>
+              <option value="recently-added">Recently Added</option>
+              <option value="alphabetical">Alphabetical</option>
+              <option value="creator">Creator</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="playlist-items">
+          <div class="playlist-item">
+            <div class="cover">
+              <img
+                src="https://lh3.googleusercontent.com/0awh0DreGnV9tfZ_jr_Zf99MT4dJqm__7ZJubHcxA8aiQpE_cgTKQtiV8v1d6vBvgEX1rAI6LNDkWKCO=w544-h544-l90-rj"
+                alt="">
+            </div>
+            <div class="detail">
+              <h6>
+                Playlist 1
+              </h6>
+              <p>
+                detail playlist 1
+              </p>
+            </div>
+          </div>
+          <div class="playlist-item">
+            <div class="cover">
+              <img
+                src="https://lh3.googleusercontent.com/0awh0DreGnV9tfZ_jr_Zf99MT4dJqm__7ZJubHcxA8aiQpE_cgTKQtiV8v1d6vBvgEX1rAI6LNDkWKCO=w544-h544-l90-rj"
+                alt="">
+            </div>
+            <div class="detail">
+              <h6>
+                Playlist 1
+              </h6>
+              <p>
+                detail playlist 1
+              </p>
+            </div>
+          </div>
+          <div class="playlist-item">
+            <div class="cover">
+              <img
+                src="https://lh3.googleusercontent.com/0awh0DreGnV9tfZ_jr_Zf99MT4dJqm__7ZJubHcxA8aiQpE_cgTKQtiV8v1d6vBvgEX1rAI6LNDkWKCO=w544-h544-l90-rj"
+                alt="">
+            </div>
+            <div class="detail">
+              <h6>
+                Playlist 1
+              </h6>
+              <p>
+                detail playlist 1
+              </p>
+            </div>
+          </div>
+          <div class="playlist-item">
+            <div class="cover">
+              <img
+                src="https://lh3.googleusercontent.com/0awh0DreGnV9tfZ_jr_Zf99MT4dJqm__7ZJubHcxA8aiQpE_cgTKQtiV8v1d6vBvgEX1rAI6LNDkWKCO=w544-h544-l90-rj"
+                alt="">
+            </div>
+            <div class="detail">
+              <h6>
+                Playlist 1
+              </h6>
+              <p>
+                detail playlist 1
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex-right rounded">
+      <div class="header">
+        <img src="C:\Users\Siraj Shalahuddin\Downloads\Untitled design (26).png" alt="" style=" width: 60px; height: 60px;">
+        <h1> Spotipu</h1>
+      </div>
+      <div class="most-played-songs">
+        <h2>Most Played Songs</h2>
+        <ul>
+          <li>
+            <img
+              src="https://lh3.googleusercontent.com/0awh0DreGnV9tfZ_jr_Zf99MT4dJqm__7ZJubHcxA8aiQpE_cgTKQtiV8v1d6vBvgEX1rAI6LNDkWKCO=w544-h544-l90-rj"
+              alt="Most Played Song 1 Cover">
+            <div class="song-info">
+              <h3>Most Played Song 1</h3>
+              <p>Artist 1</p>
+            </div>
+          </li>
+          <li>
+            <img
+              src="https://lh3.googleusercontent.com/0awh0DreGnV9tfZ_jr_Zf99MT4dJqm__7ZJubHcxA8aiQpE_cgTKQtiV8v1d6vBvgEX1rAI6LNDkWKCO=w544-h544-l90-rj"
+              alt="Most Played Song 2 Cover">
+            <div class="song-info">
+              <h3>Most Played Song 2</h3>
+              <p>Artist 2</p>
+            </div>
+          </li>
+          <!-- Add more songs as needed -->
+        </ul>
+      </div>
+
+      <div class="song-list">
+        <h2>All Songs</h2>
+        <ul>
+          <li>
+            <img
+              src="https://lh3.googleusercontent.com/0awh0DreGnV9tfZ_jr_Zf99MT4dJqm__7ZJubHcxA8aiQpE_cgTKQtiV8v1d6vBvgEX1rAI6LNDkWKCO=w544-h544-l90-rj"
+              alt="Song 1 Cover">
+            <div class="song-info">
+              <h3>Song 1</h3>
+              <p>Artist 1</p>
+            </div>
+          </li>
+          <li>
+            <img
+              src="https://lh3.googleusercontent.com/0awh0DreGnV9tfZ_jr_Zf99MT4dJqm__7ZJubHcxA8aiQpE_cgTKQtiV8v1d6vBvgEX1rAI6LNDkWKCO=w544-h544-l90-rj"
+              alt="Song 2 Cover">
+            <div class="song-info">
+              <h3>Song 2</h3>
+              <p>Artist 2</p>
+            </div>
+          </li>
+          <!-- Add more songs as needed -->
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
