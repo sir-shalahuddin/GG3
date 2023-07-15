@@ -11,7 +11,7 @@ async function generateSongId() {
     return `song-${nanoid(8)}`;
 }
 
-export async function addSongModel(title, artists, url) {
+export async function addSongModel({ title, artists, url }) {
     const song = {
         songId: await generateSongId(),
         title,
@@ -29,6 +29,15 @@ export async function getSongByIdModel(id) {
     return song;
 }
 
-export async function getSongsModel() {
-    return playlist;
+export async function getSongsModel({ order }) {
+    if (!order) {
+        return playlist;
+    }
+    const sortedPlaylist = [...playlist];
+    if (order === 'asc') {
+        sortedPlaylist.sort((a, b) => a.playCount - b.playCount);
+    } else if (order === 'desc') {
+        sortedPlaylist.sort((a, b) => b.playCount - a.playCount);
+    }
+    return sortedPlaylist;
 }

@@ -4,7 +4,7 @@ import {
     getSongsModel,
 } from '../models/playlists.js';
 
-export const addSongService = async (title, artists, url) => addSongModel(title, artists, url);
+export const addSongService = async (payload) => addSongModel(payload);
 
 export const playSongService = async (id) => {
     const song = await getSongByIdModel(id);
@@ -15,15 +15,4 @@ export const playSongService = async (id) => {
     return song;
 };
 
-export const getSongsService = async () => getSongsModel();
-
-export const sortSongByPlayCountService = async (playlist, order) => {
-    const sortedPlaylist = [...playlist];
-    if (order === 'asc') {
-        await sortedPlaylist.sort((a, b) => a.playCount - b.playCount);
-    } else if (order === 'desc') {
-        await sortedPlaylist.sort((a, b) => b.playCount - a.playCount);
-    }
-
-    return sortedPlaylist;
-};
+export const getSongsService = async (query) => getSongsModel(query);
