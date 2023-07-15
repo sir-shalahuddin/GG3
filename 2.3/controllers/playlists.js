@@ -54,16 +54,16 @@ export const playPlaylistSongs = async (req, res) => {
 
 export const getPlaylistSongs = async (req, res) => {
     try {
-        const sortBy = req.query.sortby;
-        const songs = await getSongsService();
+        const { order = 'desc', sortby } = req.query;
+        let songs = await getSongsService();
         if (songs.length === 0) {
             return res.status(404).json({
                 status: 'fail',
                 message: 'Playlist is empty',
             });
         }
-        if (sortBy === 'most-played') {
-            await sortSongByPlayCountService(songs);
+        if (sortby?.toLowerCase() === 'most-played') {
+            songs = await sortSongByPlayCountService(songs, order);
         }
         return res.status(200).json({
             status: 'success',
